@@ -3,10 +3,10 @@ import '../stylesheets/App.css';
 import Home from './Home';
 import Login from './Login';
 import Logout from './Logout';
-import ArticleList from './ArticleList';
-import ArticleInfo from './ArticleInfo';
-import ArticleAdd from './ArticleAdd';
-import ArticleEdit from './ArticleEdit';
+import ArticleList from './Article/ArticleList';
+import ArticleInfo from './Article/ArticleInfo';
+import ArticleAdd from './Article/ArticleAdd';
+import ArticleEdit from './Article/ArticleEdit';
 import {BrowserRouter as Router, Route, NavLink, Switch} from 'react-router-dom'
 
 class App extends Component {

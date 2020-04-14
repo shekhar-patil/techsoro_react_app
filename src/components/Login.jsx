@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { post } from 'axios';
+import { API_ROOT } from './../config';
 
 class Login extends Component {
   constructor() {
@@ -12,9 +13,8 @@ class Login extends Component {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const request = { "email": email, "password": password };
-    post('http://techsoro.herokuapp.com/api/v1/login', request)
+    post(`${API_ROOT}/login`, request)
       .then(response => {
-        debugger;
         localStorage.setItem("jwt", response.data.jwt);
         this.props.history.push("/");
       })

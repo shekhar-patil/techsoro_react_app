@@ -3,7 +3,10 @@ import React from 'react';
 const Home = () => {
   return (
     <div className="jumbotron">
-      <h1>Home Page</h1>
+      <center>
+        <h1>Welcome to TechSoro</h1>
+        <h4>Make it possible!!</h4>
+      </center>
     </div>
   );
 }
